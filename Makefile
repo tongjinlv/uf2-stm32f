@@ -19,12 +19,12 @@ export OPENOCD	?= openocd
 
 JTAGCONFIG ?= interface/stlink-v2.cfg
 
-export BOARD ?= f401
+export BOARD ?= f411
 -include boards/$(BOARD)/board.mk
 
 # Default to F401; override in board.mk if needed
 FN ?= f4
-CPUTYPE ?= STM32F401
+CPUTYPE ?= STM32F411
 CPUTYPE_SHORT ?= STM32F4
 CPUFLAGS ?= -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
 # f1: -mcpu=cortex-m3
